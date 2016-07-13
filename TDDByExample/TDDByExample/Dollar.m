@@ -23,4 +23,9 @@
     return [[Dollar alloc] initWithAmount:result];
 }
 
+-(BOOL)isEqualTo:(id)object {
+    Dollar *dollar = (Dollar*)object;
+    return self.amount == dollar.amount;
+}
+
 @end

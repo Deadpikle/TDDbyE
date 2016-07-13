@@ -9,11 +9,11 @@
 #import <XCTest/XCTest.h>
 #import "Dollar.h"
 
-@interface ChapterTwo : XCTestCase
+@interface MoneyTests : XCTestCase
 
 @end
 
-@implementation ChapterTwo
+@implementation MoneyTests
 
 -(void)testMultiplication {
     Dollar *five = [[Dollar alloc] initWithAmount:5];
@@ -21,6 +21,11 @@
     XCTAssertEqual(10, product.amount);
     product = [five times:3];
     XCTAssertEqual(15, product.amount);
+}
+
+-(void)testEquality {
+    XCTAssertTrue([[[Dollar alloc] initWithAmount:5] isEqualTo:[[Dollar alloc] initWithAmount:5]]);
+    XCTAssertFalse([[[Dollar alloc] initWithAmount:5] isEqualTo:[[Dollar alloc] initWithAmount:6]]);
 }
 
 @end
