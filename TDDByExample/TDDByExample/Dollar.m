@@ -23,7 +23,9 @@
     return [[Dollar alloc] initWithAmount:result];
 }
 
--(BOOL)isEqualTo:(id)object {
+// For more information regarding isEqual: vs isEqualTo:,
+// see http://stackoverflow.com/a/7096815/3938401
+-(BOOL)isEqual:(id)object {
     Dollar *dollar = (Dollar*)object;
     return self.amount == dollar.amount;
 }
