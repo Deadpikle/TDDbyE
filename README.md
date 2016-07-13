@@ -7,4 +7,4 @@ In order to jump to the end of any chapter (and thus right before the next), you
 
 1. 4177a8f
 2. ad64521
-3. faa2342
+3. 6f58b58
