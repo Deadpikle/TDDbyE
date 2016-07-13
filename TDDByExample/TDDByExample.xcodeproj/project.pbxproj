@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		34BE07201D36F67E00D01D1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE071F1D36F67E00D01D1E /* main.m */; };
+		34BE072D1D36F6F200D01D1E /* TDDbyExample_UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE072C1D36F6F200D01D1E /* TDDbyExample_UnitTests.m */; };
+		34BE07331D36F7E900D01D1E /* ChapterOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07321D36F7E900D01D1E /* ChapterOne.m */; };
+		34BE07381D36FF2400D01D1E /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07371D36FF2400D01D1E /* Dollar.m */; };
+		34BE07391D36FF2400D01D1E /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07371D36FF2400D01D1E /* Dollar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +29,23 @@
 /* Begin PBXFileReference section */
 		34BE071C1D36F67E00D01D1E /* TDDByExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TDDByExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BE071F1D36F67E00D01D1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34BE072A1D36F6F200D01D1E /* TDDbyExample-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDDbyExample-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BE072C1D36F6F200D01D1E /* TDDbyExample_UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDDbyExample_UnitTests.m; sourceTree = "<group>"; };
+		34BE072E1D36F6F200D01D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34BE07321D36F7E900D01D1E /* ChapterOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterOne.m; sourceTree = "<group>"; };
+		34BE07361D36FF2400D01D1E /* Dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dollar.h; path = ChapterOne/Dollar.h; sourceTree = "<group>"; };
+		34BE07371D36FF2400D01D1E /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dollar.m; path = ChapterOne/Dollar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		34BE07191D36F67E00D01D1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34BE07271D36F6F200D01D1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				34BE071E1D36F67E00D01D1E /* TDDByExample */,
+				34BE072B1D36F6F200D01D1E /* TDDbyExample-UnitTests */,
 				34BE071D1D36F67E00D01D1E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				34BE071C1D36F67E00D01D1E /* TDDByExample */,
+				34BE072A1D36F6F200D01D1E /* TDDbyExample-UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +76,29 @@
 		34BE071E1D36F67E00D01D1E /* TDDByExample */ = {
 			isa = PBXGroup;
 			children = (
+				34BE07361D36FF2400D01D1E /* Dollar.h */,
+				34BE07371D36FF2400D01D1E /* Dollar.m */,
 				34BE071F1D36F67E00D01D1E /* main.m */,
 			);
 			path = TDDByExample;
+			sourceTree = "<group>";
+		};
+		34BE072B1D36F6F200D01D1E /* TDDbyExample-UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				34BE07341D36FD5400D01D1E /* Part1 */,
+				34BE072C1D36F6F200D01D1E /* TDDbyExample_UnitTests.m */,
+				34BE072E1D36F6F200D01D1E /* Info.plist */,
+			);
+			path = "TDDbyExample-UnitTests";
+			sourceTree = "<group>";
+		};
+		34BE07341D36FD5400D01D1E /* Part1 */ = {
+			isa = PBXGroup;
+			children = (
+				34BE07321D36F7E900D01D1E /* ChapterOne.m */,
+			);
+			name = Part1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +121,23 @@
 			productReference = 34BE071C1D36F67E00D01D1E /* TDDByExample */;
 			productType = "com.apple.product-type.tool";
 		};
+		34BE07291D36F6F200D01D1E /* TDDbyExample-UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34BE072F1D36F6F200D01D1E /* Build configuration list for PBXNativeTarget "TDDbyExample-UnitTests" */;
+			buildPhases = (
+				34BE07261D36F6F200D01D1E /* Sources */,
+				34BE07271D36F6F200D01D1E /* Frameworks */,
+				34BE07281D36F6F200D01D1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TDDbyExample-UnitTests";
+			productName = "TDDbyExample-UnitTests";
+			productReference = 34BE072A1D36F6F200D01D1E /* TDDbyExample-UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +148,9 @@
 				ORGANIZATIONNAME = CIRC;
 				TargetAttributes = {
 					34BE071B1D36F67E00D01D1E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					34BE07291D36F6F200D01D1E = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -109,9 +168,20 @@
 			projectRoot = "";
 			targets = (
 				34BE071B1D36F67E00D01D1E /* TDDByExample */,
+				34BE07291D36F6F200D01D1E /* TDDbyExample-UnitTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34BE07281D36F6F200D01D1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		34BE07181D36F67E00D01D1E /* Sources */ = {
@@ -119,6 +189,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				34BE07201D36F67E00D01D1E /* main.m in Sources */,
+				34BE07381D36FF2400D01D1E /* Dollar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34BE07261D36F6F200D01D1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BE07391D36FF2400D01D1E /* Dollar.m in Sources */,
+				34BE07331D36F7E900D01D1E /* ChapterOne.m in Sources */,
+				34BE072D1D36F6F200D01D1E /* TDDbyExample_UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +301,28 @@
 			};
 			name = Release;
 		};
+		34BE07301D36F6F200D01D1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "TDDbyExample-UnitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pikleproductions.TDDbyExample-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		34BE07311D36F6F200D01D1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "TDDbyExample-UnitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pikleproductions.TDDbyExample-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -237,6 +340,14 @@
 			buildConfigurations = (
 				34BE07241D36F67E00D01D1E /* Debug */,
 				34BE07251D36F67E00D01D1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		34BE072F1D36F6F200D01D1E /* Build configuration list for PBXNativeTarget "TDDbyExample-UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34BE07301D36F6F200D01D1E /* Debug */,
+				34BE07311D36F6F200D01D1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
