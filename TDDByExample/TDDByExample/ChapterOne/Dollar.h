@@ -14,6 +14,6 @@
 
 -(instancetype)initWithAmount:(int)amount;
 
--(void)times:(int)multiplier;
+-(Dollar*)times:(int)multiplier;
 
 @end

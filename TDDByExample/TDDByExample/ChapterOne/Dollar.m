@@ -18,8 +18,9 @@
     return self;
 }
 
--(void)times:(int)multiplier {
-    self.amount *= multiplier;
+-(Dollar*)times:(int)multiplier {
+    int result = self.amount * multiplier;
+    return [[Dollar alloc] initWithAmount:result];
 }
 
 @end

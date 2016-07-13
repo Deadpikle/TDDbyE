@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		34BE07201D36F67E00D01D1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE071F1D36F67E00D01D1E /* main.m */; };
-		34BE072D1D36F6F200D01D1E /* TDDbyExample_UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE072C1D36F6F200D01D1E /* TDDbyExample_UnitTests.m */; };
-		34BE07331D36F7E900D01D1E /* ChapterOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07321D36F7E900D01D1E /* ChapterOne.m */; };
 		34BE07381D36FF2400D01D1E /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07371D36FF2400D01D1E /* Dollar.m */; };
 		34BE07391D36FF2400D01D1E /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07371D36FF2400D01D1E /* Dollar.m */; };
+		34BE073F1D37052E00D01D1E /* MoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE073E1D37052E00D01D1E /* MoneyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,12 +29,11 @@
 		34BE071C1D36F67E00D01D1E /* TDDByExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TDDByExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BE071F1D36F67E00D01D1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34BE072A1D36F6F200D01D1E /* TDDbyExample-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDDbyExample-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		34BE072C1D36F6F200D01D1E /* TDDbyExample_UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDDbyExample_UnitTests.m; sourceTree = "<group>"; };
 		34BE072E1D36F6F200D01D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34BE07321D36F7E900D01D1E /* ChapterOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterOne.m; sourceTree = "<group>"; };
 		34BE07361D36FF2400D01D1E /* Dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dollar.h; path = ChapterOne/Dollar.h; sourceTree = "<group>"; };
 		34BE07371D36FF2400D01D1E /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dollar.m; path = ChapterOne/Dollar.m; sourceTree = "<group>"; };
 		34BE073D1D37035B00D01D1E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		34BE073E1D37052E00D01D1E /* MoneyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				34BE07341D36FD5400D01D1E /* Part1 */,
-				34BE072C1D36F6F200D01D1E /* TDDbyExample_UnitTests.m */,
 				34BE072E1D36F6F200D01D1E /* Info.plist */,
 			);
 			path = "TDDbyExample-UnitTests";
@@ -98,7 +95,7 @@
 		34BE07341D36FD5400D01D1E /* Part1 */ = {
 			isa = PBXGroup;
 			children = (
-				34BE07321D36F7E900D01D1E /* ChapterOne.m */,
+				34BE073E1D37052E00D01D1E /* MoneyTests.m */,
 			);
 			name = Part1;
 			sourceTree = "<group>";
@@ -199,9 +196,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BE073F1D37052E00D01D1E /* MoneyTests.m in Sources */,
 				34BE07391D36FF2400D01D1E /* Dollar.m in Sources */,
-				34BE07331D36F7E900D01D1E /* ChapterOne.m in Sources */,
-				34BE072D1D36F6F200D01D1E /* TDDbyExample_UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
