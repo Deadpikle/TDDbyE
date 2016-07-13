@@ -12,8 +12,6 @@
 		34BE07331D36F7E900D01D1E /* ChapterOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07321D36F7E900D01D1E /* ChapterOne.m */; };
 		34BE07381D36FF2400D01D1E /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07371D36FF2400D01D1E /* Dollar.m */; };
 		34BE07391D36FF2400D01D1E /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07371D36FF2400D01D1E /* Dollar.m */; };
-		34BE073B1D3702E000D01D1E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 34BE073A1D3702E000D01D1E /* README.md */; };
-		34BE073C1D3702E000D01D1E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 34BE073A1D3702E000D01D1E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,7 +35,7 @@
 		34BE07321D36F7E900D01D1E /* ChapterOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterOne.m; sourceTree = "<group>"; };
 		34BE07361D36FF2400D01D1E /* Dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dollar.h; path = ChapterOne/Dollar.h; sourceTree = "<group>"; };
 		34BE07371D36FF2400D01D1E /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dollar.m; path = ChapterOne/Dollar.m; sourceTree = "<group>"; };
-		34BE073A1D3702E000D01D1E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		34BE073D1D37035B00D01D1E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,7 @@
 		34BE071E1D36F67E00D01D1E /* TDDByExample */ = {
 			isa = PBXGroup;
 			children = (
-				34BE073A1D3702E000D01D1E /* README.md */,
+				34BE073D1D37035B00D01D1E /* README.md */,
 				34BE07361D36FF2400D01D1E /* Dollar.h */,
 				34BE07371D36FF2400D01D1E /* Dollar.m */,
 				34BE071F1D36F67E00D01D1E /* main.m */,
@@ -192,7 +190,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34BE073B1D3702E000D01D1E /* README.md in Sources */,
 				34BE07201D36F67E00D01D1E /* main.m in Sources */,
 				34BE07381D36FF2400D01D1E /* Dollar.m in Sources */,
 			);
@@ -204,7 +201,6 @@
 			files = (
 				34BE07391D36FF2400D01D1E /* Dollar.m in Sources */,
 				34BE07331D36F7E900D01D1E /* ChapterOne.m in Sources */,
-				34BE073C1D3702E000D01D1E /* README.md in Sources */,
 				34BE072D1D36F6F200D01D1E /* TDDbyExample_UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
