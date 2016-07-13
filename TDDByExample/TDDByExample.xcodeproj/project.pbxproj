@@ -30,8 +30,8 @@
 		34BE071F1D36F67E00D01D1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34BE072A1D36F6F200D01D1E /* TDDbyExample-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDDbyExample-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BE072E1D36F6F200D01D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34BE07361D36FF2400D01D1E /* Dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dollar.h; path = ChapterOne/Dollar.h; sourceTree = "<group>"; };
-		34BE07371D36FF2400D01D1E /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dollar.m; path = ChapterOne/Dollar.m; sourceTree = "<group>"; };
+		34BE07361D36FF2400D01D1E /* Dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dollar.h; sourceTree = "<group>"; };
+		34BE07371D36FF2400D01D1E /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dollar.m; sourceTree = "<group>"; };
 		34BE073D1D37035B00D01D1E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		34BE073E1D37052E00D01D1E /* MoneyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
