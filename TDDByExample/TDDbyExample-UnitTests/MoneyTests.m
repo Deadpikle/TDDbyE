@@ -29,4 +29,10 @@
     XCTAssertFalse([[Dollar dollarWithAmount:5] isEqualTo:[Dollar dollarWithAmount:6]]);
 }
 
+-(void)testPrivateVariableAccess {
+    // In Objective-C, there are crafty ways to access private variables. >:)
+    Dollar *twelve = [Dollar dollarWithAmount:12];
+    XCTAssertEqual(12, [[twelve valueForKey:@"amount"] integerValue]);
+}
+
 @end
