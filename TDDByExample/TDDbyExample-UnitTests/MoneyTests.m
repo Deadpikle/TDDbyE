@@ -33,6 +33,9 @@
     // In Objective-C, there are crafty ways to access private variables. >:)
     Dollar *twelve = [Dollar dollarWithAmount:12];
     XCTAssertEqual(12, [[twelve valueForKey:@"amount"] integerValue]);
+    
+    [twelve setValue:@15 forKey:@"amount"];
+    XCTAssertEqual(15, [[twelve valueForKey:@"amount"] integerValue]);
 }
 
 @end
