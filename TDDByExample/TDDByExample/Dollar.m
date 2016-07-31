@@ -11,8 +11,6 @@
 // This is the "private" interface
 @interface Dollar()
 
-@property int amount;
-
 @end
 
 @implementation Dollar
@@ -20,7 +18,7 @@
 -(instancetype)initWithAmount:(int)amount {
     self = [super init];
     if (self) {
-        self.amount = amount;
+        _amount = amount;
     }
     return self;
 }
@@ -30,7 +28,7 @@
 }
 
 -(Dollar*)times:(int)multiplier {
-    int result = self.amount * multiplier;
+    int result = _amount * multiplier;
     return [[Dollar alloc] initWithAmount:result];
 }
 
@@ -38,7 +36,7 @@
 // see http://stackoverflow.com/a/7096815/3938401
 -(BOOL)isEqual:(id)object {
     Dollar *dollar = (Dollar*)object;
-    return self.amount == dollar.amount;
+    return _amount == dollar->_amount;
 }
 
 @end
