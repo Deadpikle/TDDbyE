@@ -18,6 +18,10 @@
     return self;
 }
 
++(instancetype)dollarWithAmount:(int)amount {
+    return [[Dollar alloc] initWithAmount:amount];
+}
+
 -(Dollar*)times:(int)multiplier {
     int result = self.amount * multiplier;
     return [[Dollar alloc] initWithAmount:result];

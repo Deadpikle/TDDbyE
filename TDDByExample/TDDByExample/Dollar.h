@@ -14,6 +14,9 @@
 
 -(instancetype)initWithAmount:(int)amount;
 
+// convenience "constructor" so we don't have to do both alloc and initWithAmount
++(instancetype)dollarWithAmount:(int)amount;
+
 -(Dollar*)times:(int)multiplier;
 
 @end
