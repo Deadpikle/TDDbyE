@@ -7,6 +7,7 @@
 //
 
 #import "Dollar.h"
+#import "Money_Protected.h"
 
 // This is the "private" interface
 @interface Dollar()
@@ -18,7 +19,7 @@
 -(instancetype)initWithAmount:(int)amount {
     self = [super init];
     if (self) {
-        _amount = amount;
+        self.amount = amount;
     }
     return self;
 }
@@ -28,15 +29,8 @@
 }
 
 -(Dollar*)times:(int)multiplier {
-    int result = _amount * multiplier;
+    int result = self.amount * multiplier;
     return [[Dollar alloc] initWithAmount:result];
-}
-
-// For more information regarding isEqual: vs isEqualTo:,
-// see http://stackoverflow.com/a/7096815/3938401
--(BOOL)isEqual:(id)object {
-    Dollar *dollar = (Dollar*)object;
-    return _amount == dollar->_amount;
 }
 
 @end

@@ -42,6 +42,7 @@
 		34DF0AB21D4E9F0200BC071D /* Franc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Franc.m; sourceTree = "<group>"; };
 		34DF0AB51D4EA11600BC071D /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
 		34DF0AB61D4EA11600BC071D /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
+		34DF0AB91D4EA44F00BC071D /* Money_Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Money_Protected.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 				34DF0AB11D4E9F0200BC071D /* Franc.h */,
 				34DF0AB21D4E9F0200BC071D /* Franc.m */,
 				34DF0AB51D4EA11600BC071D /* Money.h */,
+				34DF0AB91D4EA44F00BC071D /* Money_Protected.h */,
 				34DF0AB61D4EA11600BC071D /* Money.m */,
 				34BE071F1D36F67E00D01D1E /* main.m */,
 			);
