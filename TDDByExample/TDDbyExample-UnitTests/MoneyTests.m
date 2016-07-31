@@ -41,11 +41,15 @@
 
 // Franc Tests
 
-
 -(void)testFrancMultiplication {
     Franc *five = [[Franc alloc] initWithAmount:5];
     XCTAssertTrue([[Franc francWithAmount:10] isEqualTo:[five times:2]]);
     XCTAssertEqualObjects([Franc francWithAmount:15], [five times:3]);
+}
+
+-(void)testFrancEquality {
+    XCTAssertTrue([[Franc francWithAmount:5] isEqualTo:[Franc francWithAmount:5]]);
+    XCTAssertFalse([[Franc francWithAmount:5] isEqualTo:[Franc francWithAmount:6]]);
 }
 
 @end

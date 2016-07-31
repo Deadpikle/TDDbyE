@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Money.h"
 
-@interface Franc : NSObject
+@interface Franc : Money
 
 -(instancetype)initWithAmount:(int)amount;
 
