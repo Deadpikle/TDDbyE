@@ -17,13 +17,11 @@
 
 -(void)testMultiplication {
     Dollar *five = [[Dollar alloc] initWithAmount:5];
-    Dollar *product = [five times:2];
     // We can either use XCTAssertTrue (with an isEqualTo: call) or XCTAssertEqualObjects
     // to compare two Dollar objects. Dollars are pointers, so we can't just do
     // == or similar (as we must compare values).
-    XCTAssertTrue([[Dollar dollarWithAmount:10] isEqualTo:product]);
-    product = [five times:3];
-    XCTAssertEqualObjects([Dollar dollarWithAmount:15], product);
+    XCTAssertTrue([[Dollar dollarWithAmount:10] isEqualTo:[five times:2]]);
+    XCTAssertEqualObjects([Dollar dollarWithAmount:15], [five times:3]);
 }
 
 -(void)testEquality {
