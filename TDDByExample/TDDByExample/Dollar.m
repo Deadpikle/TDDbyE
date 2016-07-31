@@ -8,6 +8,13 @@
 
 #import "Dollar.h"
 
+// This is the "private" interface
+@interface Dollar()
+
+@property int amount;
+
+@end
+
 @implementation Dollar
 
 -(instancetype)initWithAmount:(int)amount {

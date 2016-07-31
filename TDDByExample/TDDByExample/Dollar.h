@@ -10,8 +10,6 @@
 
 @interface Dollar : NSObject
 
-@property int amount;
-
 -(instancetype)initWithAmount:(int)amount;
 
 // convenience "constructor" so we don't have to do both alloc and initWithAmount
