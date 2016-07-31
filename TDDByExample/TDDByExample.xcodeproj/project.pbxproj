@@ -11,6 +11,8 @@
 		34BE07381D36FF2400D01D1E /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07371D36FF2400D01D1E /* Dollar.m */; };
 		34BE07391D36FF2400D01D1E /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07371D36FF2400D01D1E /* Dollar.m */; };
 		34BE073F1D37052E00D01D1E /* MoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE073E1D37052E00D01D1E /* MoneyTests.m */; };
+		34DF0AB31D4E9F0200BC071D /* Franc.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DF0AB21D4E9F0200BC071D /* Franc.m */; };
+		34DF0AB41D4EA01000BC071D /* Franc.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DF0AB21D4E9F0200BC071D /* Franc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,8 @@
 		34BE07371D36FF2400D01D1E /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dollar.m; sourceTree = "<group>"; };
 		34BE073D1D37035B00D01D1E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		34BE073E1D37052E00D01D1E /* MoneyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTests.m; sourceTree = "<group>"; };
+		34DF0AB11D4E9F0200BC071D /* Franc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Franc.h; sourceTree = "<group>"; };
+		34DF0AB21D4E9F0200BC071D /* Franc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Franc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				34BE073D1D37035B00D01D1E /* README.md */,
 				34BE07361D36FF2400D01D1E /* Dollar.h */,
 				34BE07371D36FF2400D01D1E /* Dollar.m */,
+				34DF0AB11D4E9F0200BC071D /* Franc.h */,
+				34DF0AB21D4E9F0200BC071D /* Franc.m */,
 				34BE071F1D36F67E00D01D1E /* main.m */,
 			);
 			path = TDDByExample;
@@ -187,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34DF0AB31D4E9F0200BC071D /* Franc.m in Sources */,
 				34BE07201D36F67E00D01D1E /* main.m in Sources */,
 				34BE07381D36FF2400D01D1E /* Dollar.m in Sources */,
 			);
@@ -196,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34DF0AB41D4EA01000BC071D /* Franc.m in Sources */,
 				34BE073F1D37052E00D01D1E /* MoneyTests.m in Sources */,
 				34BE07391D36FF2400D01D1E /* Dollar.m in Sources */,
 			);
@@ -340,6 +348,7 @@
 				34BE07251D36F67E00D01D1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34BE072F1D36F6F200D01D1E /* Build configuration list for PBXNativeTarget "TDDbyExample-UnitTests" */ = {
 			isa = XCConfigurationList;
@@ -348,6 +357,7 @@
 				34BE07311D36F6F200D01D1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
