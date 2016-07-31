@@ -10,3 +10,4 @@ In order to jump to the end of any chapter (and thus right before the next), you
 3. 6f58b58
 4. ee6e222
 5. da767e6
+6. 25c5310
