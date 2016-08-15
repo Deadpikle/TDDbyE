@@ -34,7 +34,7 @@
 // see http://stackoverflow.com/a/7096815/3938401
 -(BOOL)isEqual:(id)object {
     Money *money = (Money*)object;
-    return self.amount == money.amount && [object isKindOfClass:[self class]];
+    return self.amount == money.amount && [object class] == [self class];
 }
 
 -(NSString*)description {

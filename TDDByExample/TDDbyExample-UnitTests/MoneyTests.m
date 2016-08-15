@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "Money.h"
+#import "Franc.h"
 
 @interface MoneyTests : XCTestCase
 
@@ -60,6 +61,10 @@
 -(void)testCurrency {
 	XCTAssertTrue([@"USD" isEqualToString:[[Money dollarWithAmount:1] currency]]);
 	XCTAssertTrue([@"CHF" isEqualToString:[[Money francWithAmount:1] currency]]);
+}
+
+-(void)testDifferentClassEquality {
+	XCTAssertTrue([[[Money alloc] initWithAmount:10 currency:@"CHF"] isEqualTo:[Franc francWithAmount:10 currency:@"CHF"]]);
 }
 
 @end
