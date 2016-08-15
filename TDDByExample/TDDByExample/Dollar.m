@@ -12,6 +12,8 @@
 // This is the "private" interface
 @interface Dollar()
 
+@property NSString *currencyType;
+
 @end
 
 @implementation Dollar
@@ -19,7 +21,8 @@
 -(instancetype)initWithAmount:(int)amount {
     self = [super init];
     if (self) {
-        self.amount = amount;
+		self.amount = amount;
+		self.currencyType = @"USD";
     }
     return self;
 }
@@ -30,6 +33,10 @@
 
 -(Dollar*)times:(int)multiplier {
 	return [Dollar dollarWithAmount:self.amount * multiplier];
+}
+
+-(NSString*)currency {
+	return self.currencyType;
 }
 
 @end

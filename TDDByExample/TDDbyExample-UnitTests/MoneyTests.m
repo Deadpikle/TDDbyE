@@ -55,4 +55,11 @@
 	XCTAssertFalse([[Money francWithAmount:5] isEqualTo:[Money dollarWithAmount:5]]);
 }
 
+// Currency Tests
+
+-(void)testCurrency {
+	XCTAssertTrue([@"USD" isEqualToString:[[Money dollarWithAmount:1] currency]]);
+	XCTAssertTrue([@"CHF" isEqualToString:[[Money francWithAmount:1] currency]]);
+}
+
 @end

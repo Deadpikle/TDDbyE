@@ -32,4 +32,8 @@
 	return nil;
 }
 
+-(NSString*)currency {
+	return nil;
+}
+
 @end

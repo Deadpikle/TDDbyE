@@ -17,6 +17,8 @@
 +(Money*)dollarWithAmount:(int)amount;
 +(Money*)francWithAmount:(int)amount;
 
+// The following functions should be implemented by all subclasses:
 -(Money*)times:(int)amount;
+-(NSString*)currency;
 
 @end

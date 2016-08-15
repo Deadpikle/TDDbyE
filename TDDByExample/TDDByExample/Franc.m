@@ -11,6 +11,8 @@
 
 @interface Franc()
 
+@property NSString *currencyType;
+
 @end
 
 @implementation Franc
@@ -19,6 +21,7 @@
     self = [super init];
     if (self) {
         self.amount = amount;
+		self.currencyType = @"CHF";
     }
     return self;
 }
@@ -29,6 +32,10 @@
 
 -(Money*)times:(int)multiplier {
 	return [Franc francWithAmount:self.amount * multiplier];
+}
+
+-(NSString*)currency {
+	return self.currencyType;
 }
 
 @end
