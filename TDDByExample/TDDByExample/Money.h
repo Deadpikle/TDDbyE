@@ -14,6 +14,8 @@
 
 @interface Money : NSObject
 
+-(instancetype)initWithAmount:(int)amount currency:(NSString*)currency;
+
 +(Money*)dollarWithAmount:(int)amount;
 +(Money*)francWithAmount:(int)amount;
 

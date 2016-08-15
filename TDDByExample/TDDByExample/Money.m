@@ -13,6 +13,15 @@
 
 @implementation Money
 
+-(instancetype)initWithAmount:(int)amount currency:(NSString*)currency {
+	self = [super init];
+	if (self) {
+		self.amount = amount;
+		self.currencyType = currency;
+	}
+	return self;
+}
+
 +(Money*)dollarWithAmount:(int)amount {
 	return [Dollar dollarWithAmount:amount currency:@"USD"];
 }

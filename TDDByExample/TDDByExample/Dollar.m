@@ -17,12 +17,7 @@
 @implementation Dollar
 
 -(instancetype)initWithAmount:(int)amount currency:(NSString*)currency {
-    self = [super init];
-    if (self) {
-		self.amount = amount;
-		self.currencyType = currency;
-    }
-    return self;
+	return [super initWithAmount:amount currency:currency];
 }
 
 +(instancetype)dollarWithAmount:(int)amount currency:(NSString*)currency {
