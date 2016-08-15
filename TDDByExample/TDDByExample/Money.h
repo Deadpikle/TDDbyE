@@ -15,6 +15,7 @@
 @interface Money : NSObject
 
 +(Money*)dollarWithAmount:(int)amount;
++(Money*)francWithAmount:(int)amount;
 
 -(Money*)times:(int)amount;
 

@@ -9,11 +9,16 @@
 #import "Money.h"
 #import "Money_Protected.h" // must import the protected header to synthesize things properly
 #import "Dollar.h"
+#import "Franc.h"
 
 @implementation Money
 
 +(Money*)dollarWithAmount:(int)amount {
 	return [Dollar dollarWithAmount:amount];
+}
+
++(Money*)francWithAmount:(int)amount {
+	return [Franc francWithAmount:amount];
 }
 
 // For more information regarding isEqual: vs isEqualTo:,
