@@ -13,3 +13,4 @@ In order to jump to the end of any chapter (and thus right before the next), you
 6. 25c5310
 7. 00c4363
 8. 6205c72
+9. 6b87382
