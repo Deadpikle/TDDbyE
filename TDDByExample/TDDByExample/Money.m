@@ -8,14 +8,23 @@
 
 #import "Money.h"
 #import "Money_Protected.h" // must import the protected header to synthesize things properly
+#import "Dollar.h"
 
 @implementation Money
+
++(Money*)dollarWithAmount:(int)amount {
+	return [Dollar dollarWithAmount:amount];
+}
 
 // For more information regarding isEqual: vs isEqualTo:,
 // see http://stackoverflow.com/a/7096815/3938401
 -(BOOL)isEqual:(id)object {
     Money *money = (Money*)object;
     return self.amount == money.amount && [object isKindOfClass:[self class]];
+}
+
+-(Money*)times:(int)amount {
+	return nil;
 }
 
 @end

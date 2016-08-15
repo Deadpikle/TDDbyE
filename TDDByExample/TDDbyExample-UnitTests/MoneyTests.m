@@ -17,7 +17,7 @@
 @implementation MoneyTests
 
 -(void)testMultiplication {
-    Dollar *five = [[Dollar alloc] initWithAmount:5];
+	Money *five = [Money dollarWithAmount:5];
     // We can either use XCTAssertTrue (with an isEqualTo: call) or XCTAssertEqualObjects
     // to compare two Dollar objects. Dollars are pointers, so we can't just do
     // == or similar (as we must compare values).

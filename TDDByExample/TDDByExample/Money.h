@@ -14,4 +14,8 @@
 
 @interface Money : NSObject
 
++(Money*)dollarWithAmount:(int)amount;
+
+-(Money*)times:(int)amount;
+
 @end
