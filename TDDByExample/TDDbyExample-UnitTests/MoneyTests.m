@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "Franc.h"
+#import "Money.h"
 
 @interface MoneyTests : XCTestCase
 
