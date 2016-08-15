@@ -29,8 +29,7 @@
 }
 
 -(Dollar*)times:(int)multiplier {
-    int result = self.amount * multiplier;
-    return [[Dollar alloc] initWithAmount:result];
+	return [Dollar dollarWithAmount:self.amount * multiplier];
 }
 
 @end

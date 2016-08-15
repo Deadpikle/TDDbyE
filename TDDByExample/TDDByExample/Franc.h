@@ -16,6 +16,6 @@
 // convenience "constructor" so we don't have to do both alloc and initWithAmount
 +(instancetype)francWithAmount:(int)amount;
 
--(Franc*)times:(int)multiplier;
+-(Money*)times:(int)multiplier;
 
 @end

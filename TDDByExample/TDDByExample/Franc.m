@@ -27,9 +27,8 @@
     return [[Franc alloc] initWithAmount:amount];
 }
 
--(Franc*)times:(int)multiplier {
-    int result = self.amount * multiplier;
-    return [[Franc alloc] initWithAmount:result];
+-(Money*)times:(int)multiplier {
+	return [Franc francWithAmount:self.amount * multiplier];
 }
 
 @end
