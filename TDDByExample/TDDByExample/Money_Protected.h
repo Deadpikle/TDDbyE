@@ -2,7 +2,7 @@
 //  Money_Protected.h
 //  TDDByExample
 //
-//  Created by School of Computing Macbook on 7/31/16.
+//  Created by Deadpikle on 7/31/16.
 //  Copyright © 2016 CIRC. All rights reserved.
 //
 

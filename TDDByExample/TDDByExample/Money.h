@@ -2,7 +2,7 @@
 //  Money.h
 //  TDDByExample
 //
-//  Created by School of Computing Macbook on 7/31/16.
+//  Created by Deadpikle on 7/31/16.
 //  Copyright © 2016 CIRC. All rights reserved.
 //
 //  Benefits of instance variables over properties: http://stackoverflow.com/a/9086811/3938401

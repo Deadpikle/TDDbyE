@@ -2,7 +2,7 @@
 //  Money.m
 //  TDDByExample
 //
-//  Created by School of Computing Macbook on 7/31/16.
+//  Created by Deadpikle on 7/31/16.
 //  Copyright © 2016 CIRC. All rights reserved.
 //
 
@@ -15,7 +15,7 @@
 // see http://stackoverflow.com/a/7096815/3938401
 -(BOOL)isEqual:(id)object {
     Money *money = (Money*)object;
-    return self.amount == money.amount;
+    return self.amount == money.amount && [object isKindOfClass:[self class]];
 }
 
 @end

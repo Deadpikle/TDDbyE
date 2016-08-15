@@ -2,7 +2,7 @@
 //  ChapterTwo.m
 //  TDDByExample
 //
-//  Created by School of Computing Macbook on 7/13/16.
+//  Created by Deadpikle on 7/13/16.
 //  Copyright © 2016 CIRC. All rights reserved.
 //
 
@@ -27,7 +27,7 @@
 
 -(void)testEquality {
     XCTAssertTrue([[Dollar dollarWithAmount:5] isEqualTo:[Dollar dollarWithAmount:5]]);
-    XCTAssertFalse([[Dollar dollarWithAmount:5] isEqualTo:[Dollar dollarWithAmount:6]]);
+	XCTAssertFalse([[Dollar dollarWithAmount:5] isEqualTo:[Dollar dollarWithAmount:6]]);
 }
 
 -(void)testPrivateVariableAccess {
@@ -50,6 +50,10 @@
 -(void)testFrancEquality {
     XCTAssertTrue([[Franc francWithAmount:5] isEqualTo:[Franc francWithAmount:5]]);
     XCTAssertFalse([[Franc francWithAmount:5] isEqualTo:[Franc francWithAmount:6]]);
+}
+
+-(void)testMoneyEquality {
+	XCTAssertFalse([[Franc francWithAmount:5] isEqualTo:[Dollar dollarWithAmount:5]]);
 }
 
 @end
