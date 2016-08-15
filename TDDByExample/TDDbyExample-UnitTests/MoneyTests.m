@@ -7,7 +7,6 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "Dollar.h"
 #import "Franc.h"
 
 @interface MoneyTests : XCTestCase
@@ -21,18 +20,18 @@
     // We can either use XCTAssertTrue (with an isEqualTo: call) or XCTAssertEqualObjects
     // to compare two Dollar objects. Dollars are pointers, so we can't just do
     // == or similar (as we must compare values).
-    XCTAssertTrue([[Dollar dollarWithAmount:10] isEqualTo:[five times:2]]);
-    XCTAssertEqualObjects([Dollar dollarWithAmount:15], [five times:3]);
+    XCTAssertTrue([[Money dollarWithAmount:10] isEqualTo:[five times:2]]);
+    XCTAssertEqualObjects([Money dollarWithAmount:15], [five times:3]);
 }
 
 -(void)testEquality {
-    XCTAssertTrue([[Dollar dollarWithAmount:5] isEqualTo:[Dollar dollarWithAmount:5]]);
-	XCTAssertFalse([[Dollar dollarWithAmount:5] isEqualTo:[Dollar dollarWithAmount:6]]);
+    XCTAssertTrue([[Money dollarWithAmount:5] isEqualTo:[Money dollarWithAmount:5]]);
+	XCTAssertFalse([[Money dollarWithAmount:5] isEqualTo:[Money dollarWithAmount:6]]);
 }
 
 -(void)testPrivateVariableAccess {
     // In Objective-C, there are crafty ways to access private variables. >:)
-    Dollar *twelve = [Dollar dollarWithAmount:12];
+    Money *twelve = [Money dollarWithAmount:12];
     XCTAssertEqual(12, [[twelve valueForKey:@"amount"] integerValue]);
     
     [twelve setValue:@15 forKey:@"amount"];
@@ -53,7 +52,7 @@
 }
 
 -(void)testMoneyEquality {
-	XCTAssertFalse([[Franc francWithAmount:5] isEqualTo:[Dollar dollarWithAmount:5]]);
+	XCTAssertFalse([[Franc francWithAmount:5] isEqualTo:[Money dollarWithAmount:5]]);
 }
 
 @end
