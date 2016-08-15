@@ -37,6 +37,10 @@
     return self.amount == money.amount && [object isKindOfClass:[self class]];
 }
 
+-(NSString*)description {
+	return [NSString stringWithFormat:@"[%@] Amount: %d; Currency: %@", [self class], self.amount, self.currencyType];
+}
+
 -(Money*)times:(int)amount {
 	return nil;
 }

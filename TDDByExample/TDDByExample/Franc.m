@@ -24,7 +24,7 @@
 }
 
 -(Money*)times:(int)multiplier {
-	return [Money francWithAmount:self.amount * multiplier];
+	return [[Money alloc] initWithAmount:self.amount * multiplier currency:self.currencyType];
 }
 
 -(NSString*)currency {
