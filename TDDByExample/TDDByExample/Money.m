@@ -18,7 +18,7 @@
 }
 
 +(Money*)francWithAmount:(int)amount {
-	return [Franc francWithAmount:amount];
+	return [Franc francWithAmount:amount currency:@"CHF"];
 }
 
 // For more information regarding isEqual: vs isEqualTo:,

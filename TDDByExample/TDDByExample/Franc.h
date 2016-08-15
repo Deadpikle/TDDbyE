@@ -11,9 +11,9 @@
 
 @interface Franc : Money
 
--(instancetype)initWithAmount:(int)amount;
+-(instancetype)initWithAmount:(int)amount currency:(NSString*)currency;
 
 // convenience "constructor" so we don't have to do both alloc and initWithAmount
-+(instancetype)francWithAmount:(int)amount;
++(instancetype)francWithAmount:(int)amount currency:(NSString*)currency;
 
 @end

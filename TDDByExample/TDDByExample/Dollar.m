@@ -12,8 +12,6 @@
 // This is the "private" interface
 @interface Dollar()
 
-@property NSString *currencyType;
-
 @end
 
 @implementation Dollar

@@ -12,6 +12,7 @@
 @interface Money()
 
 @property int amount;
+@property NSString *currencyType;
 
 @end
 
