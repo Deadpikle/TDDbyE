@@ -14,7 +14,7 @@
 @implementation Money
 
 +(Money*)dollarWithAmount:(int)amount {
-	return [Dollar dollarWithAmount:amount];
+	return [Dollar dollarWithAmount:amount currency:@"USD"];
 }
 
 +(Money*)francWithAmount:(int)amount {

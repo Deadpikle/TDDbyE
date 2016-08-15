@@ -16,21 +16,21 @@
 
 @implementation Dollar
 
--(instancetype)initWithAmount:(int)amount {
+-(instancetype)initWithAmount:(int)amount currency:(NSString*)currency {
     self = [super init];
     if (self) {
 		self.amount = amount;
-		self.currencyType = @"USD";
+		self.currencyType = currency;
     }
     return self;
 }
 
-+(instancetype)dollarWithAmount:(int)amount {
-    return [[Dollar alloc] initWithAmount:amount];
++(instancetype)dollarWithAmount:(int)amount currency:(NSString*)currency {
+    return [[Dollar alloc] initWithAmount:amount currency:currency];
 }
 
--(Dollar*)times:(int)multiplier {
-	return [Dollar dollarWithAmount:self.amount * multiplier];
+-(Money*)times:(int)multiplier {
+	return [Money dollarWithAmount:self.amount * multiplier];
 }
 
 -(NSString*)currency {

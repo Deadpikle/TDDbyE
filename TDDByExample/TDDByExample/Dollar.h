@@ -11,9 +11,9 @@
 
 @interface Dollar : Money
 
--(instancetype)initWithAmount:(int)amount;
+-(instancetype)initWithAmount:(int)amount currency:(NSString*)currency;
 
 // convenience "constructor" so we don't have to do both alloc and initWithAmount
-+(instancetype)dollarWithAmount:(int)amount;
++(instancetype)dollarWithAmount:(int)amount currency:(NSString*)currency;
 
 @end
