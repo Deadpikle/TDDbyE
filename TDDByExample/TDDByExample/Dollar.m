@@ -24,10 +24,6 @@
     return [[Dollar alloc] initWithAmount:amount currency:currency];
 }
 
--(Money*)times:(int)multiplier {
-	return [Dollar dollarWithAmount:self.amount * multiplier currency:self.currencyType];
-}
-
 -(NSString*)currency {
 	return self.currencyType;
 }

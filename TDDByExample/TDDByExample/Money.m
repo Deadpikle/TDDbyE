@@ -34,15 +34,15 @@
 // see http://stackoverflow.com/a/7096815/3938401
 -(BOOL)isEqual:(id)object {
     Money *money = (Money*)object;
-    return self.amount == money.amount && [object class] == [self class];
+    return self.amount == money.amount && [money.currencyType isEqualToString:self.currencyType];
 }
 
 -(NSString*)description {
 	return [NSString stringWithFormat:@"[%@] Amount: %d; Currency: %@", [self class], self.amount, self.currencyType];
 }
 
--(Money*)times:(int)amount {
-	return nil;
+-(Money*)times:(int)multiplier {
+	return [[Money alloc] initWithAmount:self.amount * multiplier currency:self.currencyType];
 }
 
 -(NSString*)currency {

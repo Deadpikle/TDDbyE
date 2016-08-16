@@ -23,10 +23,6 @@
     return [[Franc alloc] initWithAmount:amount currency:currency];
 }
 
--(Money*)times:(int)multiplier {
-	return [[Franc alloc] initWithAmount:self.amount * multiplier currency:self.currencyType];
-}
-
 -(NSString*)currency {
 	return self.currencyType;
 }
