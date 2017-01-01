@@ -14,5 +14,6 @@
 
 -(Money*)reduce:(id<Expression>)expression toCurrency:(NSString*)currency;
 -(NSInteger)getExchangeRateFromCurrency:(NSString*)fromCurrency toCurrency:(NSString*)toCurrency;
+-(void)addCurrencyExchangeRateFrom:(NSString*)from toCurrency:(NSString*)to withRate:(NSInteger)rate;
 
 @end

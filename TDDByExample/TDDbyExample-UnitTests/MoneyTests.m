@@ -85,8 +85,9 @@
 
 -(void)testReduceMoneyDifferentCurrency {
 	Bank *bank = [Bank new];
-	[bank addCurrencyExchangeRateOf:@"CHF" to:@"USD" withAmount:2];
-	Money *result = [bank reduce:[Money francWithAmount:2] toCurrency:@"USD"];
+	[bank addCurrencyExchangeRateFrom:@"CHF" toCurrency:@"USD" withRate:2];
+	Money *franc = [Money francWithAmount:2];
+	Money *result = [bank reduce:franc toCurrency:@"USD"];
 	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:1]]);
 }
 
