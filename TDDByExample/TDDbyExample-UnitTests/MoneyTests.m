@@ -70,4 +70,11 @@
 	XCTAssertEqual(five, actualSum.addend);
 }
 
+-(void)testReduceSum {
+	id<Expression> sum = [[Sum alloc] initWithAugend:[Money dollarWithAmount:3] addend:[Money dollarWithAmount:4]];
+	Bank *bank = [Bank new]; // same as [[Bank alloc] init]
+	Money *result = [bank reduce:sum toCurrency:@"USD"];
+	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:7]]);
+}
+
 @end
