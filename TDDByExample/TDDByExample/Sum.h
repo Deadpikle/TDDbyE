@@ -16,5 +16,6 @@
 @property Money *addend;
 
 -(instancetype)initWithAugend:(Money*)augend addend:(Money*)addend;
+-(Money*)reduceTo:(NSString*)currency;
 
 @end

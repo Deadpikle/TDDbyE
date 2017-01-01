@@ -7,7 +7,6 @@
 //
 
 #import "Money.h"
-#import "Money_Protected.h" // must import the protected header to synthesize things properly
 #import "Sum.h"
 
 @implementation Money

@@ -15,6 +15,9 @@
 
 @interface Money : NSObject <Expression>
 
+@property int amount;
+@property NSString *currencyType;
+
 -(instancetype)initWithAmount:(int)amount currency:(NSString*)currency;
 
 +(Money*)dollarWithAmount:(int)amount;

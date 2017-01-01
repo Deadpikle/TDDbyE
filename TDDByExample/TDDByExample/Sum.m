@@ -19,4 +19,9 @@
 	return self;
 }
 
+-(Money*)reduceTo:(NSString*)currency {
+	int amount = self.augend.amount + self.addend.amount;
+	return [[Money alloc] initWithAmount:amount currency:currency];
+}
+
 @end
