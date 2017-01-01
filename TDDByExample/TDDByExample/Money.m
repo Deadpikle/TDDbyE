@@ -53,4 +53,8 @@
 	return [[Sum alloc] initWithAugend:self addend:moneyToAdd];
 }
 
+-(Money*)reduceTo:(NSString*)currency {
+	return self;
+}
+
 @end

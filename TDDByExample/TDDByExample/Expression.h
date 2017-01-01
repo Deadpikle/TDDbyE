@@ -9,11 +9,13 @@
 #ifndef Expression_h
 #define Expression_h
 
+@class Money;
+
 @protocol Expression <NSObject>
 
 @required
 
-
+-(Money*)reduceTo:(NSString*)currency;
 
 @end
 
