@@ -26,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		349FE2FE1E19A89A00E21F68 /* Expression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Expression.h; sourceTree = "<group>"; };
 		34BE071C1D36F67E00D01D1E /* TDDByExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TDDByExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BE071F1D36F67E00D01D1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34BE072A1D36F6F200D01D1E /* TDDbyExample-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDDbyExample-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +82,7 @@
 				34DF0AB91D4EA44F00BC071D /* Money_Protected.h */,
 				34DF0AB61D4EA11600BC071D /* Money.m */,
 				34BE071F1D36F67E00D01D1E /* main.m */,
+				349FE2FE1E19A89A00E21F68 /* Expression.h */,
 			);
 			path = TDDByExample;
 			sourceTree = "<group>";

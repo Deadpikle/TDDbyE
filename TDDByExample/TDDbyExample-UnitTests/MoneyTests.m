@@ -52,8 +52,11 @@
 // Addition Tests
 
 -(void)testSimpleAddition {
-	Money *sum = [[Money dollarWithAmount:5] plus:[Money dollarWithAmount:5]];
-	XCTAssertTrue([[Money dollarWithAmount:10] isEqualTo:sum]);
+	Money *five = [Money dollarWithAmount:5];
+	Express *sum = [five plus:five];
+	Bank *bank = [[Bank alloc] init];
+	Money *reduced = [bank reduceMoney:sum toCurrency:@"USD"];
+	XCTAssertTrue([[Money dollarWithAmount:10] isEqualTo:reduced]);
 }
 
 @end

@@ -11,8 +11,9 @@
 //  See: http://stackoverflow.com/q/11047351/3938401
 
 #import <Foundation/Foundation.h>
+#import "Expression.h"
 
-@interface Money : NSObject
+@interface Money : NSObject <Expression>
 
 -(instancetype)initWithAmount:(int)amount currency:(NSString*)currency;
 
@@ -23,6 +24,6 @@
 -(Money*)times:(int)multiplier;
 -(NSString*)currency;
 
--(Money*)plus:(Money*)moneyToAdd;
+-(id<Expression>)plus:(Money*)moneyToAdd;
 
 @end

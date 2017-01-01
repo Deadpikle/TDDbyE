@@ -47,7 +47,7 @@
 	return self.currencyType;
 }
 
--(Money*)plus:(Money*)moneyToAdd {
+-(id<Expression>)plus:(Money*)moneyToAdd {
 	int finalAmount = self.amount + moneyToAdd.amount;
 	return [[Money alloc] initWithAmount:finalAmount currency:self.currencyType];
 }
