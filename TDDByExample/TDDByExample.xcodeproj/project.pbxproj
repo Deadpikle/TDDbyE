@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		349FE3011E19AA1700E21F68 /* Bank.m in Sources */ = {isa = PBXBuildFile; fileRef = 349FE3001E19AA1700E21F68 /* Bank.m */; };
 		349FE3021E19AB1000E21F68 /* Bank.m in Sources */ = {isa = PBXBuildFile; fileRef = 349FE3001E19AA1700E21F68 /* Bank.m */; };
+		349FE3051E19AC2800E21F68 /* Sum.m in Sources */ = {isa = PBXBuildFile; fileRef = 349FE3041E19AC2800E21F68 /* Sum.m */; };
 		34BE07201D36F67E00D01D1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE071F1D36F67E00D01D1E /* main.m */; };
 		34BE073F1D37052E00D01D1E /* MoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE073E1D37052E00D01D1E /* MoneyTests.m */; };
 		34DF0AB71D4EA11600BC071D /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DF0AB61D4EA11600BC071D /* Money.m */; };
@@ -31,6 +32,8 @@
 		349FE2FE1E19A89A00E21F68 /* Expression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Expression.h; sourceTree = "<group>"; };
 		349FE2FF1E19AA1700E21F68 /* Bank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bank.h; sourceTree = "<group>"; };
 		349FE3001E19AA1700E21F68 /* Bank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bank.m; sourceTree = "<group>"; };
+		349FE3031E19AC2800E21F68 /* Sum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sum.h; sourceTree = "<group>"; };
+		349FE3041E19AC2800E21F68 /* Sum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sum.m; sourceTree = "<group>"; };
 		34BE071C1D36F67E00D01D1E /* TDDByExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TDDByExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BE071F1D36F67E00D01D1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34BE072A1D36F6F200D01D1E /* TDDbyExample-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDDbyExample-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,8 @@
 				34DF0AB51D4EA11600BC071D /* Money.h */,
 				34DF0AB91D4EA44F00BC071D /* Money_Protected.h */,
 				34DF0AB61D4EA11600BC071D /* Money.m */,
+				349FE3031E19AC2800E21F68 /* Sum.h */,
+				349FE3041E19AC2800E21F68 /* Sum.m */,
 				34BE071F1D36F67E00D01D1E /* main.m */,
 			);
 			path = TDDByExample;
@@ -198,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34BE07201D36F67E00D01D1E /* main.m in Sources */,
+				349FE3051E19AC2800E21F68 /* Sum.m in Sources */,
 				34DF0AB71D4EA11600BC071D /* Money.m in Sources */,
 				349FE3011E19AA1700E21F68 /* Bank.m in Sources */,
 			);
