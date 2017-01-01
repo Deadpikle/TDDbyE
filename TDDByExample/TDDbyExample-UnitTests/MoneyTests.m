@@ -91,4 +91,8 @@
 	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:1]]);
 }
 
+-(void)testIdentityRate {
+	XCTAssertEqual(1, [[Bank new] getExchangeRateFromCurrency:@"USD" toCurrency:@"USD"]);
+}
+
 @end

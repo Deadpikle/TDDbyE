@@ -1,7 +1,7 @@
 # TDDbyE-Objective-C
 Test-Driven Development By Example -- Kent Black -- Code in Objective-C
 
-# Commits
+# Chapters by Commit
 
 In order to jump to the end of any chapter (and thus right before the next), you may use the following commits:
 
