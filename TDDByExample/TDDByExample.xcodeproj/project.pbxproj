@@ -10,6 +10,7 @@
 		349FE3011E19AA1700E21F68 /* Bank.m in Sources */ = {isa = PBXBuildFile; fileRef = 349FE3001E19AA1700E21F68 /* Bank.m */; };
 		349FE3021E19AB1000E21F68 /* Bank.m in Sources */ = {isa = PBXBuildFile; fileRef = 349FE3001E19AA1700E21F68 /* Bank.m */; };
 		349FE3051E19AC2800E21F68 /* Sum.m in Sources */ = {isa = PBXBuildFile; fileRef = 349FE3041E19AC2800E21F68 /* Sum.m */; };
+		349FE3061E19AD0600E21F68 /* Sum.m in Sources */ = {isa = PBXBuildFile; fileRef = 349FE3041E19AC2800E21F68 /* Sum.m */; };
 		34BE07201D36F67E00D01D1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE071F1D36F67E00D01D1E /* main.m */; };
 		34BE073F1D37052E00D01D1E /* MoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE073E1D37052E00D01D1E /* MoneyTests.m */; };
 		34DF0AB71D4EA11600BC071D /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DF0AB61D4EA11600BC071D /* Money.m */; };
@@ -214,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34BE073F1D37052E00D01D1E /* MoneyTests.m in Sources */,
+				349FE3061E19AD0600E21F68 /* Sum.m in Sources */,
 				34DF0AB81D4EA11600BC071D /* Money.m in Sources */,
 				349FE3021E19AB1000E21F68 /* Bank.m in Sources */,
 			);

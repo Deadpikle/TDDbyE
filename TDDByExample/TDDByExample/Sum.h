@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "Money.h"
+#import "Expression.h"
 
-@interface Sum : NSObject
+@interface Sum : NSObject <Expression>
 
 @property Money *augend;
 @property Money *addend;
+
+-(instancetype)initWithAugend:(Money*)augend addend:(Money*)addend;
 
 @end

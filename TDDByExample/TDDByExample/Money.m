@@ -8,6 +8,7 @@
 
 #import "Money.h"
 #import "Money_Protected.h" // must import the protected header to synthesize things properly
+#import "Sum.h"
 
 @implementation Money
 
@@ -48,8 +49,9 @@
 }
 
 -(id<Expression>)plus:(Money*)moneyToAdd {
-	int finalAmount = self.amount + moneyToAdd.amount;
-	return [[Money alloc] initWithAmount:finalAmount currency:self.currencyType];
+	//int finalAmount = self.amount + moneyToAdd.amount;
+	//return [[Money alloc] initWithAmount:finalAmount currency:self.currencyType];
+	return [[Sum alloc] initWithAugend:self addend:moneyToAdd];
 }
 
 @end
