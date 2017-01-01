@@ -8,11 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34BE07201D36F67E00D01D1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE071F1D36F67E00D01D1E /* main.m */; };
-		34BE07381D36FF2400D01D1E /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07371D36FF2400D01D1E /* Dollar.m */; };
-		34BE07391D36FF2400D01D1E /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE07371D36FF2400D01D1E /* Dollar.m */; };
 		34BE073F1D37052E00D01D1E /* MoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE073E1D37052E00D01D1E /* MoneyTests.m */; };
-		34DF0AB31D4E9F0200BC071D /* Franc.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DF0AB21D4E9F0200BC071D /* Franc.m */; };
-		34DF0AB41D4EA01000BC071D /* Franc.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DF0AB21D4E9F0200BC071D /* Franc.m */; };
 		34DF0AB71D4EA11600BC071D /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DF0AB61D4EA11600BC071D /* Money.m */; };
 		34DF0AB81D4EA11600BC071D /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DF0AB61D4EA11600BC071D /* Money.m */; };
 /* End PBXBuildFile section */
@@ -34,12 +30,8 @@
 		34BE071F1D36F67E00D01D1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34BE072A1D36F6F200D01D1E /* TDDbyExample-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDDbyExample-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BE072E1D36F6F200D01D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34BE07361D36FF2400D01D1E /* Dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dollar.h; sourceTree = "<group>"; };
-		34BE07371D36FF2400D01D1E /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dollar.m; sourceTree = "<group>"; };
 		34BE073D1D37035B00D01D1E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		34BE073E1D37052E00D01D1E /* MoneyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTests.m; sourceTree = "<group>"; };
-		34DF0AB11D4E9F0200BC071D /* Franc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Franc.h; sourceTree = "<group>"; };
-		34DF0AB21D4E9F0200BC071D /* Franc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Franc.m; sourceTree = "<group>"; };
 		34DF0AB51D4EA11600BC071D /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
 		34DF0AB61D4EA11600BC071D /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
 		34DF0AB91D4EA44F00BC071D /* Money_Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Money_Protected.h; sourceTree = "<group>"; };
@@ -85,10 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				34BE073D1D37035B00D01D1E /* README.md */,
-				34BE07361D36FF2400D01D1E /* Dollar.h */,
-				34BE07371D36FF2400D01D1E /* Dollar.m */,
-				34DF0AB11D4E9F0200BC071D /* Franc.h */,
-				34DF0AB21D4E9F0200BC071D /* Franc.m */,
 				34DF0AB51D4EA11600BC071D /* Money.h */,
 				34DF0AB91D4EA44F00BC071D /* Money_Protected.h */,
 				34DF0AB61D4EA11600BC071D /* Money.m */,
@@ -201,10 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34DF0AB31D4E9F0200BC071D /* Franc.m in Sources */,
 				34BE07201D36F67E00D01D1E /* main.m in Sources */,
 				34DF0AB71D4EA11600BC071D /* Money.m in Sources */,
-				34BE07381D36FF2400D01D1E /* Dollar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,10 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34DF0AB41D4EA01000BC071D /* Franc.m in Sources */,
 				34BE073F1D37052E00D01D1E /* MoneyTests.m in Sources */,
 				34DF0AB81D4EA11600BC071D /* Money.m in Sources */,
-				34BE07391D36FF2400D01D1E /* Dollar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

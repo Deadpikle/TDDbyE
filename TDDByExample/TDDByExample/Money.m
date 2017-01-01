@@ -8,8 +8,6 @@
 
 #import "Money.h"
 #import "Money_Protected.h" // must import the protected header to synthesize things properly
-#import "Dollar.h"
-#import "Franc.h"
 
 @implementation Money
 
@@ -23,11 +21,11 @@
 }
 
 +(Money*)dollarWithAmount:(int)amount {
-	return [Dollar dollarWithAmount:amount currency:@"USD"];
+	return [[Money alloc] initWithAmount:amount currency:@"USD"];
 }
 
 +(Money*)francWithAmount:(int)amount {
-	return [Franc francWithAmount:amount currency:@"CHF"];
+	return [[Money alloc] initWithAmount:amount currency:@"CHF"];
 }
 
 // For more information regarding isEqual: vs isEqualTo:,
@@ -46,7 +44,7 @@
 }
 
 -(NSString*)currency {
-	return nil;
+	return self.currencyType;
 }
 
 @end

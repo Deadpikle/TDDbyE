@@ -8,7 +8,6 @@
 
 #import <XCTest/XCTest.h>
 #import "Money.h"
-#import "Franc.h"
 
 @interface MoneyTests : XCTestCase
 
@@ -39,19 +38,6 @@
     XCTAssertEqual(15, [[twelve valueForKey:@"amount"] integerValue]);
 }
 
-// Franc Tests
-
--(void)testFrancMultiplication {
-    Money *five = [Money francWithAmount:5];
-    XCTAssertTrue([[Money francWithAmount:10] isEqualTo:[five times:2]]);
-    XCTAssertEqualObjects([Money francWithAmount:15], [five times:3]);
-}
-
--(void)testFrancEquality {
-    XCTAssertTrue([[Money francWithAmount:5] isEqualTo:[Money francWithAmount:5]]);
-    XCTAssertFalse([[Money francWithAmount:5] isEqualTo:[Money francWithAmount:6]]);
-}
-
 -(void)testMoneyEquality {
 	XCTAssertFalse([[Money francWithAmount:5] isEqualTo:[Money dollarWithAmount:5]]);
 }
@@ -61,10 +47,6 @@
 -(void)testCurrency {
 	XCTAssertTrue([@"USD" isEqualToString:[[Money dollarWithAmount:1] currency]]);
 	XCTAssertTrue([@"CHF" isEqualToString:[[Money francWithAmount:1] currency]]);
-}
-
--(void)testDifferentClassEquality {
-	XCTAssertTrue([[[Money alloc] initWithAmount:10 currency:@"CHF"] isEqualTo:[Franc francWithAmount:10 currency:@"CHF"]]);
 }
 
 @end
