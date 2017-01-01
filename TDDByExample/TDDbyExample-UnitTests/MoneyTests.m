@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 #import "Money.h"
+#import "Bank.h"
+#import "Expression.h"
 
 @interface MoneyTests : XCTestCase
 
@@ -53,9 +55,9 @@
 
 -(void)testSimpleAddition {
 	Money *five = [Money dollarWithAmount:5];
-	Express *sum = [five plus:five];
+	id<Expression> sum = [five plus:five];
 	Bank *bank = [[Bank alloc] init];
-	Money *reduced = [bank reduceMoney:sum toCurrency:@"USD"];
+	Money *reduced = [bank reduce:sum toCurrency:@"USD"];
 	XCTAssertTrue([[Money dollarWithAmount:10] isEqualTo:reduced]);
 }
 
