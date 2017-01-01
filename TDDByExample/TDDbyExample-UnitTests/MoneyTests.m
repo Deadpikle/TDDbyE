@@ -77,4 +77,10 @@
 	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:7]]);
 }
 
+-(void)testReduceMoney {
+	Bank *bank = [Bank new];
+	Money *result = [bank reduce:[Money dollarWithAmount:1] toCurrency:@"USD"];
+	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:1]]);
+}
+
 @end
