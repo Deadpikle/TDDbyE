@@ -49,4 +49,11 @@
 	XCTAssertTrue([@"CHF" isEqualToString:[[Money francWithAmount:1] currency]]);
 }
 
+// Addition Tests
+
+-(void)testSimpleAddition {
+	Money *sum = [[Money dollarWithAmount:5] plus:[Money dollarWithAmount:5]];
+	XCTAssertTrue([[Money dollarWithAmount:10] isEqualTo:sum]);
+}
+
 @end

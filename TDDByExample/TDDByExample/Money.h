@@ -23,4 +23,6 @@
 -(Money*)times:(int)multiplier;
 -(NSString*)currency;
 
+-(Money*)plus:(Money*)moneyToAdd;
+
 @end
