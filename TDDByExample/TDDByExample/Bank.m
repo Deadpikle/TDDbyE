@@ -12,7 +12,11 @@
 @implementation Bank
 
 -(Money*)reduce:(id<Expression>)expression toCurrency:(NSString*)currency {
-	return [expression reduceTo:currency];
+	return [expression reduceWithBank:self toCurrency:currency];
+}
+
+-(NSInteger)getExchangeRateFromCurrency:(NSString*)fromCurrency toCurrency:(NSString*)toCurrency {
+	return [fromCurrency isEqualToString:@"CHF"] && [toCurrency isEqualToString:@"USD"] ? 2 : 1;
 }
 
 @end

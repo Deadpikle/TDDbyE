@@ -8,6 +8,7 @@
 
 #import "Money.h"
 #import "Sum.h"
+#import "Bank.h"
 
 @implementation Money
 
@@ -48,13 +49,12 @@
 }
 
 -(id<Expression>)plus:(Money*)moneyToAdd {
-	//int finalAmount = self.amount + moneyToAdd.amount;
-	//return [[Money alloc] initWithAmount:finalAmount currency:self.currencyType];
 	return [[Sum alloc] initWithAugend:self addend:moneyToAdd];
 }
 
--(Money*)reduceTo:(NSString*)currency {
-	return self;
+-(Money*)reduceWithBank:(Bank*)bank toCurrency:(NSString*)currency {
+	NSInteger rate = [bank getExchangeRateFromCurrency:self.currencyType toCurrency:currency];
+	return [[Money alloc] initWithAmount:(self.amount / rate) currency:currency];
 }
 
 @end

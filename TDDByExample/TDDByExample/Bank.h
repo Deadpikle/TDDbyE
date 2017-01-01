@@ -13,5 +13,6 @@
 @interface Bank : NSObject
 
 -(Money*)reduce:(id<Expression>)expression toCurrency:(NSString*)currency;
+-(NSInteger)getExchangeRateFromCurrency:(NSString*)fromCurrency toCurrency:(NSString*)toCurrency;
 
 @end

@@ -10,12 +10,13 @@
 #define Expression_h
 
 @class Money;
+@class Bank;
 
 @protocol Expression <NSObject>
 
 @required
 
--(Money*)reduceTo:(NSString*)currency;
+-(Money*)reduceWithBank:(Bank*)bank toCurrency:(NSString*)currency;
 
 @end
 
