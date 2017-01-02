@@ -95,4 +95,15 @@
 	XCTAssertEqual(1, [[Bank new] getExchangeRateFromCurrency:@"USD" toCurrency:@"USD"]);
 }
 
+-(void)testMixedAddition {
+	//id<Expression> fiveBucks = [Money dollarWithAmount:5];
+	//id<Expression> tenFrancs = [Money francWithAmount:
+	Money *fiveBucks = [Money dollarWithAmount:5];
+	Money *tenFrancs = [Money francWithAmount:10];
+	Bank *bank = [Bank new];
+	[bank addCurrencyExchangeRateFrom:@"CHF" toCurrency:@"USD" withRate:2];
+	Money *result = [bank reduce:[fiveBucks plus:tenFrancs] toCurrency:@"USD"];
+	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:10]]);
+}
+
 @end
