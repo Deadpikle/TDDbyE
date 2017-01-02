@@ -40,7 +40,7 @@
 	return [NSString stringWithFormat:@"[%@] Amount: %d; Currency: %@", [self class], self.amount, self.currencyType];
 }
 
--(Money*)times:(int)multiplier {
+-(id<Expression>)times:(int)multiplier {
 	return [[Money alloc] initWithAmount:self.amount * multiplier currency:self.currencyType];
 }
 
@@ -48,7 +48,7 @@
 	return self.currencyType;
 }
 
--(id<Expression>)plus:(Money*)moneyToAdd {
+-(id<Expression>)plus:(id<Expression>)moneyToAdd {
 	return [[Sum alloc] initWithAugend:self addend:moneyToAdd];
 }
 

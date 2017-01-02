@@ -12,10 +12,9 @@
 
 @interface Sum : NSObject <Expression>
 
-@property Money *augend;
-@property Money *addend;
+@property id<Expression> augend;
+@property id<Expression> addend;
 
--(instancetype)initWithAugend:(Money*)augend addend:(Money*)addend;
--(Money*)reduceTo:(NSString*)currency;
+-(instancetype)initWithAugend:(id<Expression>)augend addend:(id<Expression>)addend;
 
 @end

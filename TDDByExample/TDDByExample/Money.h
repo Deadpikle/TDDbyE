@@ -27,6 +27,6 @@
 -(Money*)times:(int)multiplier;
 -(NSString*)currency;
 
--(id<Expression>)plus:(Money*)moneyToAdd;
+-(id<Expression>)plus:(id<Expression>)moneyToAdd;
 
 @end

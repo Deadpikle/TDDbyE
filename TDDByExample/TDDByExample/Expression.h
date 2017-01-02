@@ -17,6 +17,7 @@
 @required
 
 -(Money*)reduceWithBank:(Bank*)bank toCurrency:(NSString*)currency;
+-(id<Expression>)plus:(id<Expression>)addend;
 
 @end
 

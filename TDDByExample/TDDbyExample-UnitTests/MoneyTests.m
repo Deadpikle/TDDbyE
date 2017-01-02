@@ -96,10 +96,8 @@
 }
 
 -(void)testMixedAddition {
-	//id<Expression> fiveBucks = [Money dollarWithAmount:5];
-	//id<Expression> tenFrancs = [Money francWithAmount:
-	Money *fiveBucks = [Money dollarWithAmount:5];
-	Money *tenFrancs = [Money francWithAmount:10];
+	id<Expression> fiveBucks = [Money dollarWithAmount:5];
+	id<Expression> tenFrancs = [Money francWithAmount:10];
 	Bank *bank = [Bank new];
 	[bank addCurrencyExchangeRateFrom:@"CHF" toCurrency:@"USD" withRate:2];
 	Money *result = [bank reduce:[fiveBucks plus:tenFrancs] toCurrency:@"USD"];

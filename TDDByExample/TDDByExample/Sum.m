@@ -10,7 +10,7 @@
 
 @implementation Sum
 
--(instancetype)initWithAugend:(Money*)augend addend:(Money*)addend {
+-(instancetype)initWithAugend:(id<Expression>)augend addend:(id<Expression>)addend {
 	self = [super init];
 	if (self) {
 		self.augend = augend;
@@ -20,8 +20,12 @@
 }
 
 -(Money*)reduceWithBank:(Bank*)bank toCurrency:(NSString*)currency {
-	int amount = self.augend.amount + self.addend.amount;
+	int amount = [self.augend reduceWithBank:bank toCurrency:currency].amount + [self.addend reduceWithBank:bank toCurrency:currency].amount;
 	return [[Money alloc] initWithAmount:amount currency:currency];
+}
+
+-(id<Expression>)plus:(id<Expression>)addend {
+	return nil;
 }
 
 @end
