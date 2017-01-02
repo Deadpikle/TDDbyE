@@ -25,7 +25,7 @@
 }
 
 -(id<Expression>)plus:(id<Expression>)addend {
-	return nil;
+	return [[Sum alloc] initWithAugend:self addend:addend];
 }
 
 @end

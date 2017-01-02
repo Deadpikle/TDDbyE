@@ -104,4 +104,14 @@
 	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:10]]);
 }
 
+-(void)testSumPlusMoney {
+	id<Expression> fiveBucks = [Money dollarWithAmount:5];
+	id<Expression> tenFrancs = [Money francWithAmount:10];
+	Bank *bank = [Bank new];
+	[bank addCurrencyExchangeRateFrom:@"CHF" toCurrency:@"USD" withRate:2];
+	id<Expression> sum = [[[Sum alloc] initWithAugend:fiveBucks addend:tenFrancs] plus:fiveBucks];
+	Money *result = [bank reduce:sum toCurrency:@"USD"];
+	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:15]]);
+}
+
 @end
