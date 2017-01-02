@@ -14,9 +14,20 @@
 
 @interface MoneyTests : XCTestCase
 
+@property id<Expression> fiveBucks;
+@property id<Expression> tenFrancs;
+@property Bank *bank;
+
 @end
 
 @implementation MoneyTests
+
+-(void)setUp {
+	self.fiveBucks = [Money dollarWithAmount:5];
+	self.tenFrancs = [Money francWithAmount:10];
+	self.bank = [Bank new];
+	[self.bank addCurrencyExchangeRateFrom:@"CHF" toCurrency:@"USD" withRate:2];
+}
 
 -(void)testMultiplication {
 	Money *five = [Money dollarWithAmount:5];
@@ -78,16 +89,13 @@
 }
 
 -(void)testReduceMoney {
-	Bank *bank = [Bank new];
-	Money *result = [bank reduce:[Money dollarWithAmount:1] toCurrency:@"USD"];
+	Money *result = [self.bank reduce:[Money dollarWithAmount:1] toCurrency:@"USD"];
 	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:1]]);
 }
 
 -(void)testReduceMoneyDifferentCurrency {
-	Bank *bank = [Bank new];
-	[bank addCurrencyExchangeRateFrom:@"CHF" toCurrency:@"USD" withRate:2];
 	Money *franc = [Money francWithAmount:2];
-	Money *result = [bank reduce:franc toCurrency:@"USD"];
+	Money *result = [self.bank reduce:franc toCurrency:@"USD"];
 	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:1]]);
 }
 
@@ -98,31 +106,19 @@
 // Mixed money tests
 
 -(void)testMixedAddition {
-	id<Expression> fiveBucks = [Money dollarWithAmount:5];
-	id<Expression> tenFrancs = [Money francWithAmount:10];
-	Bank *bank = [Bank new];
-	[bank addCurrencyExchangeRateFrom:@"CHF" toCurrency:@"USD" withRate:2];
-	Money *result = [bank reduce:[fiveBucks plus:tenFrancs] toCurrency:@"USD"];
+	Money *result = [self.bank reduce:[self.fiveBucks plus:self.tenFrancs] toCurrency:@"USD"];
 	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:10]]);
 }
 
 -(void)testSumPlusMoney {
-	id<Expression> fiveBucks = [Money dollarWithAmount:5];
-	id<Expression> tenFrancs = [Money francWithAmount:10];
-	Bank *bank = [Bank new];
-	[bank addCurrencyExchangeRateFrom:@"CHF" toCurrency:@"USD" withRate:2];
-	id<Expression> sum = [[[Sum alloc] initWithAugend:fiveBucks addend:tenFrancs] plus:fiveBucks];
-	Money *result = [bank reduce:sum toCurrency:@"USD"];
+	id<Expression> sum = [[[Sum alloc] initWithAugend:self.fiveBucks addend:self.tenFrancs] plus:self.fiveBucks];
+	Money *result = [self.bank reduce:sum toCurrency:@"USD"];
 	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:15]]);
 }
 
 -(void)testSumTimes {
-	id<Expression> fiveBucks = [Money dollarWithAmount:5];
-	id<Expression> tenFrancs = [Money francWithAmount:10];
-	Bank *bank = [Bank new];
-	[bank addCurrencyExchangeRateFrom:@"CHF" toCurrency:@"USD" withRate:2];
-	id<Expression> sum = [[[Sum alloc] initWithAugend:fiveBucks addend:tenFrancs] times:2];
-	Money *result = [bank reduce:sum toCurrency:@"USD"];
+	id<Expression> sum = [[[Sum alloc] initWithAugend:self.fiveBucks addend:self.tenFrancs] times:2];
+	Money *result = [self.bank reduce:sum toCurrency:@"USD"];
 	XCTAssertTrue([result isEqualTo:[Money dollarWithAmount:20]]);
 }
 
