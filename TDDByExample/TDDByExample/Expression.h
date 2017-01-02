@@ -18,6 +18,7 @@
 
 -(Money*)reduceWithBank:(Bank*)bank toCurrency:(NSString*)currency;
 -(id<Expression>)plus:(id<Expression>)addend;
+-(id<Expression>)times:(NSInteger)multiplier;
 
 @end
 

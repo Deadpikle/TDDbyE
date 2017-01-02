@@ -28,4 +28,8 @@
 	return [[Sum alloc] initWithAugend:self addend:addend];
 }
 
+-(id<Expression>)times:(NSInteger)multiplier {
+	return [[Sum alloc] initWithAugend:[self.augend times:multiplier] addend:[self.addend times:multiplier]];
+}
+
 @end
